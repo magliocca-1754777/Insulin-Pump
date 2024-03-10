@@ -1,0 +1,4 @@
+
+connector InputReal = input Real ;
+
+

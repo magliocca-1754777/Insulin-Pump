@@ -1,0 +1,2 @@
+
+connector InputKPar = input KPar ;

@@ -1,0 +1,50 @@
+loadModel(Modelica) ;
+getErrorString() ;
+
+loadFile("InputReal.mo") ;
+getErrorString() ;
+
+loadFile("InputKPar.mo") ;
+getErrorString() ;
+
+loadFile("OutputReal.mo") ;
+getErrorString() ;
+
+loadFile("f.mo") ;
+getErrorString() ;
+
+loadFile("k_empt.mo") ;
+getErrorString() ;
+
+loadFile("KPar.mo") ;
+getErrorString() ;
+
+loadFile("MealGenerator.mo") ;
+getErrorString() ;
+
+loadFile("Patient.mo") ;
+getErrorString() ;
+
+loadFile("Pump.mo") ;
+getErrorString() ;
+
+loadFile("Monitor1Fun.mo") ;
+getErrorString() ;
+
+loadFile("Monitor2Fun.mo") ;
+getErrorString() ;
+
+loadFile("Monitor1NonFun.mo") ;
+getErrorString() ;
+
+loadFile("Monitor2NonFun.mo") ;
+getErrorString() ;
+
+loadFile("System.mo") ;
+getErrorString() ;
+
+simulate(System, stopTime=30000) ;
+getErrorString() ;
+
+plot({pa.G,mo1N.x,mo2N.x}, externalWindow = true) ;
+getErrorString() ;
